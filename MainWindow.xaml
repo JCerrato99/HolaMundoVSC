@@ -1,0 +1,29 @@
+﻿<Window x:Class="HolaMundo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HolaMundo"
+        mc:Ignorable="d"
+        Title="Hola Mundo" Height="400" Width="500">
+    <Grid RenderTransformOrigin="0.855,0.337" Margin="0,0,2,0">
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                <LinearGradientBrush.RelativeTransform>
+                    <TransformGroup>
+                        <ScaleTransform CenterY="0.5" CenterX="0.5"/>
+                        <SkewTransform CenterY="0.5" CenterX="0.5"/>
+                        <RotateTransform Angle="-45" CenterY="0.5" CenterX="0.5"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </LinearGradientBrush.RelativeTransform>
+                <GradientStop Color="#FFFFAE00" Offset="1"/>
+                <GradientStop Color="#FFBBFA60" Offset="0.8"/>
+                <GradientStop Color="#FE07FEE9" Offset="0.4"/>
+                <GradientStop Color="#FE31FC4D" Offset="0.6"/>
+                <GradientStop Color="#FE076CFE" Offset="0.2"/>
+                <GradientStop Color="#FEA907F5"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+    </Grid>
+</Window>
